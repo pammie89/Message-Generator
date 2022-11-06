@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: cyan;
+  background-image: url("./food.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+#one {
+  color: red;
+}
+#two {
+  color: blue;
+}
+#three {
+  color: black;
+}
+
+.formatted {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  margin-top: 0rem;
+  background-color: #222;
+  padding: 4rem 0;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  white-space: pre-line;
+  line-height: 4rem;
+  z-index: 100;
+  border-bottom: 5px solid whitesmoke;
+}
+
+.message {
+  color: white;
+  font-size: 3rem;
+  padding-left: 2rem;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+  background-color: coral;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin: 0;
+}
+.refresh {
+  font-size: 1.3rem;
+  padding-left: 2rem;
+  color: cyan;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-shadow: 2px 3px rgba(0, 0, 0, 0.5);
+  background-color: rgb(69, 65, 65);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin: 0;
+  border-bottom: 5px solid whitesmoke;
+}
+
+@media screen and (max-width: 428px) {
+  .message {
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+  }
+  .refresh {
+    font-size: 1.3rem;
+    padding-left: 2rem;
+    color: cyan;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 3px rgba(0, 0, 0, 0.5);
+  }
+  .formatted {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  body {
+    background-image: none;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .message {
+    font-size: 2rem;
+  }
+  body {
+    background-image: none;
+  }
+}
